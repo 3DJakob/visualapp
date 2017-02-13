@@ -1,22 +1,26 @@
 var mass = ['kg', 'g']
 
 var massExamples = [{
-  'title': 'Golfball',
+  'title': 'Golfballs',
   'measurement': '0.04593'
+}, {
+  'title': 'Elephants',
+  'measurement': '5500'
 }]
 
 function submit () {
   var inputUnit = document.getElementById('unit').value
   var inputNumber = document.getElementById('number').value
 
-  var unit;
-  // document.getElementById('body').style.backgroundColor = 'red'
-  document.getElementById('result').innerHTML = 'No match'
 
   mass.forEach(function (item) {
     if (item == inputUnit) {
-      var golf = inputNumber * (1/0.04593)
-      document.getElementById('result').innerHTML = golf + 'Golfballs'
+      for (var i = 0; i < massExamples.length; i++) {
+        document.getElementById('result').innerHTML += inputNumber / massExamples[i].measurement + ' ' + massExamples[i].title
+      }
+    } else {
+      // document.getElementById('result').innerHTML = 'Unsupported unit!'
     }
+
   })
 }
