@@ -3,9 +3,9 @@ var mass = ['kg', 'g']
 var massExamples = [{
   'title': 'Golfballs',
   'measurement': '0.04593'
-}, {
-  'title': 'Elephants',
-  'measurement': '5500'
+// }, {
+//   'title': 'Elephants',
+//   'measurement': '5500'
 }]
 
 function submit () {

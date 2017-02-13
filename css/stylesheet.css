@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+}
+
+h1, h2, h3{
+  color: #fff9f9;
+  font-family: 'Oleo Script', cursive;
+  font-size: 50px;
+}
+
+.window {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: #1E1E1E;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 6px;
+  max-width: 900px;
+}
+
+.box input {
+  margin: 10px;
+}
+
+.box input:nth-of-type(2) {
+  width: 40px;
+}
+
+.box button {
+  border: none;
+  /*outline:white solid 0.5px;*/
+  opacity: 0.2;
+  padding: 6px 8px;
+  border-radius: 3px;
+  color: black;
+  font-weight: bold;
+  margin: 0;
+  background-color: #FF6347;
+  transition: 0.2s;
+  font-size: 19pt;
+  opacity: 1 !important;
+  color: rgba(0,0,0,0.5);
+  font-family: 'Oleo Script', cursive;
+}
+
+.box button:hover {
+  transition: 0.3s;
+  opacity: 0.3;
+  background-color: #d32000;
+}
+
+div.container {
+  background-color: #DDDDDD;
+  border-radius: 5px;
+  margin: 30px;
+}
