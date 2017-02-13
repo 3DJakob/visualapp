@@ -16,7 +16,7 @@ function submit () {
   mass.forEach(function (item) {
     if (item == inputUnit) {
       for (var i = 0; i < massExamples.length; i++) {
-        document.getElementById('result').innerHTML += inputNumber / massExamples[i].measurement + ' ' + massExamples[i].title
+        document.getElementById('result').innerHTML = inputNumber / massExamples[i].measurement + ' ' + massExamples[i].title
       }
     } else {
       // document.getElementById('result').innerHTML = 'Unsupported unit!'
