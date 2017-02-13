@@ -1,5 +1,11 @@
 var mass = ['kg', 'g']
 var massExamples = [{
+  'title': 'Postage Stamps',
+  'measurement': '0.00002'
+}, {
+  'title': 'Ping Pong Balls',
+  'measurement': '0.0027'
+}, {
   'title': 'Golfballs',
   'measurement': '0.04593'
 }, {
