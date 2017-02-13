@@ -2,10 +2,9 @@ body {
   margin: 0;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
   color: #fff9f9;
   font-family: 'Oleo Script', cursive;
-  font-size: 50px;
 }
 
 .window {
@@ -56,6 +55,7 @@ div.box {
   transition: 0.3s;
   opacity: 0.3;
   background-color: #d32000;
+  cursor: pointer;
 }
 
 div.container {
