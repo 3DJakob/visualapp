@@ -1,12 +1,15 @@
 const units = new Map([
+  ['t', { quantityName: 'mass', multiplier: 1000 }],
   ['kg', { quantityName: 'mass', multiplier: 1 }],
   ['g', { quantityName: 'mass', multiplier: 0.001 }],
+  ['u', { quantityName: 'mass', multiplier: 0.00000000000000000000000000166 }],
   ['s', { quantityName: 'time', multiplier: 1 }]
 ])
 
 const quantities = new Map([
   ['mass', {
     examples: [
+      { title: 'Water molecules', measurement: 0.00000000000000000000002992 },
       { title: 'Golfballs', measurement: 0.04593 },
       { title: 'Elephants', measurement: 5500 }
     ]
