@@ -28,14 +28,48 @@ div.box {
 }
 
 .box input {
-  margin: 10px;
+  margin: 5px;
 }
 
 .box input:nth-of-type(2) {
   width: 40px;
 }
 
-.box button {
+.box:nth-of-type(1) button {
+  margin: 5px;
+  overflow: visible;
+  width: 23px;
+  height: 21px;
+}
+
+.box:nth-of-type(1) button div {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 150px;
+  margin-top: 20px;
+  margin-left: -81px;
+  z-index: 100;
+  position: absolute;
+  display: none;
+  border-radius: 3px;
+  color: #fff;
+  padding: 10px;
+}
+
+.box:nth-of-type(1) button div:before {
+    content:"\A";
+    border-style: solid;
+    border-width: 10px 10px 10px 10px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
+    position: absolute;
+    left: 75px;
+    top: -20px;
+}
+
+.box:nth-of-type(1) button div h2 {
+  margin: 3px;
+}
+
+.box:nth-of-type(2) button {
   border: none;
   padding: 6px 8px;
   border-radius: 3px;
@@ -48,7 +82,7 @@ div.box {
   font-family: 'Oleo Script', cursive;
 }
 
-.box button:hover {
+.box:nth-of-type(2) button:hover {
   transition: 0.3s;
   background-color: #d32000;
   cursor: pointer;

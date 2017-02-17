@@ -8,14 +8,16 @@
     <link rel="icon" href="img/logo.png">
     <script src="script.js" async></script>
   </head>
-  <body>
-
+  <body onload="onload()">
     <div class="window">
       <h1 style="font-size: 50px">Super Awesome Visual+ Pro App!</h1>
       <div class="container">
         <div class="box">
           <input type="number" name="" placeholder="value" id="number">
           <input type="text" name="" placeholder="unit" id="unit">
+          <button type="button" name="button" onclick="viewUnits()">?
+            <div id="units"><h2>Supported units</h2></div>
+          </button>
         </div>
         <div class="box">
           <button onclick="submit()">Bring me intresting data!</button>

@@ -48,6 +48,16 @@ const quantities = new Map([
   }]
 ])
 
+function onload () {
+  const names = units.keys()
+  let html = ''
+
+  units.forEach(function() {
+      html = html.concat(names.next().value + ', ')
+  })
+  document.getElementById('units').innerHTML += html.slice(0, -2)
+}
+
 function submit () {
   const inputUnit = document.getElementById('unit').value
   const inputNumber = Number(document.getElementById('number').value)
@@ -74,4 +84,15 @@ function submit () {
 
     document.getElementById('result').innerHTML = html
   }
+}
+
+let visibility = 0;
+
+function viewUnits () {
+  if (visibility) {
+    document.getElementById('units').style.display = 'none'
+  } else {
+    document.getElementById('units').style.display = 'block'
+  }
+  visibility = !visibility
 }
