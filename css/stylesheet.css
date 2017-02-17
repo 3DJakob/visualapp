@@ -35,14 +35,14 @@ div.box {
   width: 40px;
 }
 
-.box:nth-of-type(1) button {
+.box button.tinyButton {
   margin: 5px;
   overflow: visible;
   width: 23px;
   height: 21px;
 }
 
-.box:nth-of-type(1) button div {
+.box button.tinyButton div {
   background-color: rgba(0, 0, 0, 0.7);
   width: 150px;
   margin-top: 20px;
@@ -50,12 +50,12 @@ div.box {
   z-index: 100;
   position: absolute;
   display: none;
-  border-radius: 3px;
+  border-radius: 3;
   color: #fff;
   padding: 10px;
 }
 
-.box:nth-of-type(1) button div:before {
+.box button.tinyButton div:before {
     content:"\A";
     border-style: solid;
     border-width: 10px 10px 10px 10px;
@@ -65,11 +65,11 @@ div.box {
     top: -20px;
 }
 
-.box:nth-of-type(1) button div h2 {
+.box button.tinyButton div h2 {
   margin: 3px;
 }
 
-.box:nth-of-type(2) button {
+.box button.redButton {
   border: none;
   padding: 6px 8px;
   border-radius: 3px;
@@ -82,7 +82,7 @@ div.box {
   font-family: 'Oleo Script', cursive;
 }
 
-.box:nth-of-type(2) button:hover {
+.box button.redButton:hover {
   transition: 0.3s;
   background-color: #d32000;
   cursor: pointer;
