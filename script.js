@@ -37,6 +37,7 @@ const quantities = new Map([
   ['mass', {
     examples: [
       { title: 'Water molecules', measurement: 0.00000000000000000000002992 },
+      { title: 'Postage Stamps', measurement: 0.00002 },
       { title: 'Golfballs', measurement: 0.04593 },
       { title: 'Elephants', measurement: 5500 }
     ]
