@@ -53,8 +53,8 @@ function onload () {
   const names = units.keys()
   let html = ''
 
-  units.forEach(function() {
-      html = html.concat(names.next().value + ', ')
+  units.forEach(function () {
+    html = html.concat(names.next().value + ', ')
   })
   document.getElementById('units').innerHTML += html.slice(0, -2)
 }
@@ -87,7 +87,7 @@ function submit () {
   }
 }
 
-let visibility = 0;
+let visibility = 0
 
 function viewUnits () {
   if (visibility) {
