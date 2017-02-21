@@ -34,6 +34,13 @@ const units = new Map([
 ])
 
 const quantities = new Map([
+  ['length', {
+    examples: [
+      { title: 'Little penguins', measurement: 0.4 },
+      { title: 'Kim Jong Un\'s', measurement: 1.71 },
+      { title: 'Donald Trump\'s', measurement: 1.84 }
+    ]
+  }],
   ['mass', {
     examples: [
       { title: 'Water molecules', measurement: 0.00000000000000000000002992 },
